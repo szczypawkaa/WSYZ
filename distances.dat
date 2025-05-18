@@ -1,0 +1,27 @@
+param distance_prod_wh :=
+  SKIERNIEWICE  PRUSZKÓW     40
+  SKIERNIEWICE  PIASECZNO    50
+  SKIERNIEWICE  ZIELONKA     60
+  KSIĄŻENICE    PRUSZKÓW     30
+  KSIĄŻENICE    PIASECZNO    35
+  KSIĄŻENICE    ZIELONKA     45
+  GÓRA_KALWARIA PRUSZKÓW     55
+  GÓRA_KALWARIA PIASECZNO    25
+  GÓRA_KALWARIA ZIELONKA     60
+  OTWOCK        PRUSZKÓW     50
+  OTWOCK        PIASECZNO    30
+  OTWOCK        ZIELONKA     40
+  WOŁOMIN       PRUSZKÓW     70
+  WOŁOMIN       PIASECZNO    65
+  WOŁOMIN       ZIELONKA     20
+  LEGIONOWO     PRUSZKÓW     60
+  LEGIONOWO     PIASECZNO    55
+  LEGIONOWO     ZIELONKA     30;
+
+param distance_wh_store :=
+  PRUSZKÓW     1    15
+  PRUSZKÓW     2    18
+  PIASECZNO    1    10
+  PIASECZNO    2    12
+  ZIELONKA     1    20
+  ZIELONKA     2    25;
