@@ -6,4 +6,4 @@ data stockroom_capacity.dat;
 data distances.dat;
 option solver gurobi;
 solve;
-#display costs, amount_of_beer > project_result.txt;
+display stockroom_state;
