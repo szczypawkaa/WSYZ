@@ -41,7 +41,7 @@ s.t. subj_store_stockroom_capacity{ws in WEEKS, s in STORES}:
 s.t. subj_warehouse_capacity {w in WAREHOUSES}:
 	sum {p in PRODUCERS, ps in PRODUCTS} transport_prod_wh[p,w,ps] <= capacity[w];
 
-# Zapas sklpeu uwzględnia nadwyżki z poprzedniego tygodnia i dostawy
+# Zapas sklepu uwzględnia nadwyżki z poprzedniego tygodnia i dostawy
 s.t. subj_shop_storage_includes_leftovers {ws in WEEKS, s in STORES, ps in PRODUCTS: ws > 1}:
     stockroom_state[ws,s,ps] = stockroom_state[ws-1,s,ps] - weekly_sales[ws-1,s,ps]
                           + sum {w in WAREHOUSES} transport_wh_store[w,s,ws,ps];
@@ -51,7 +51,7 @@ s.t. subj_shop_storage_first_week {s in STORES, ps in PRODUCTS}:
     stockroom_state[1,s,ps] = sum {w in WAREHOUSES} transport_wh_store[w,s,1,ps];
 
 # Magazyn nie może wysłać więcej niż ma na stanie
-s.t. subj_trnasport_from_warehouses {w in WAREHOUSES, ps in PRODUCTS}:
+s.t. subj_transport_from_warehouses {w in WAREHOUSES, ps in PRODUCTS}:
 	sum {ws in WEEKS, s in STORES} transport_wh_store[w,s,ws,ps] <= sum {p in PRODUCERS} transport_prod_wh[p,w,ps];
 	
 # Producent nie może wysłać więcej niż produkuje

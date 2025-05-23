@@ -1,10 +1,10 @@
 reset;
 model project.mod;
-data project.dat;
-data weekly_sales.dat;
-data stockroom_capacity.dat;
-data distance_prod_wh.dat;
-data distance_wh_store.dat;
+data ./data/project.dat;
+data ./data/weekly_sales.dat;
+data ./data/stockroom_capacity.dat;
+data ./data/distance_prod_wh.dat;
+data ./data/distance_wh_store.dat;
 option solver gurobi;
 solve;
-display stockroom_state;
+display all_transport_cost;
