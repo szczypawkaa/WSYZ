@@ -8,3 +8,6 @@ data ./data/distance_wh_store.dat;
 option solver gurobi;
 solve;
 display all_transport_cost;
+display transport_prod_wh > ./results/result_transport_prod_wh.txt;
+display transport_wh_store > ./results/result_transport_wh_store.txt;
+display stockroom_state > ./results/result_stockroom_state.txt;

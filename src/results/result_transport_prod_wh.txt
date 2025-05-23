@@ -1,0 +1,28 @@
+transport_prod_wh [*,PIASECZNO,*]
+:               BURAKI    KAPUSTA   MARCHEW ZIEMNIAKI    :=
+GÓRA_KALWARIA   54.8369     0         0         2.414
+KSIĄŻENICE       0          0         0         0
+LEGIONOWO        0          0         0         0
+OTWOCK          50        103.052   148.245   100
+SKIERNIEWICE     0          0         0         0
+WOŁOMIN          0          0         0         0
+
+ [*,PRUSZKÓW,*]
+:             BURAKI   KAPUSTA MARCHEW ZIEMNIAKI    :=
+GÓRA_KALWARIA     0      0         0        0
+KSIĄŻENICE      100    197.946    80       90
+LEGIONOWO         0      0         0        0
+OTWOCK            0      0         0        0
+SKIERNIEWICE      0      0         0        0
+WOŁOMIN           0      0         0        0
+
+ [*,ZIELONKA,*]
+:                BURAKI  KAPUSTA MARCHEW ZIEMNIAKI    :=
+GÓRA_KALWARIA     0          0        0      0
+KSIĄŻENICE        0          0        0      0
+LEGIONOWO        10.4209    50        0    113.184
+OTWOCK            0          0        0      0
+SKIERNIEWICE      0          0        0      0
+WOŁOMIN         230         90      210    140
+;
+
